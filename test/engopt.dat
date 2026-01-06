@@ -1,0 +1,33 @@
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Angle            2  Proper-Dih.      3  Per.-Imp.-Dih.   4  LJ-14         
+  5  Coulomb-14       6  LJ-(SR)          7  Disper.-corr.    8  Coulomb-(SR)  
+  9  Coul.-recip.    10  Potential       11  Box-X           12  Box-Y         
+ 13  Box-Z                               14  Volume                            
+ 15  Density                             16  Coul-SR:Protein-Protein           
+ 17  LJ-SR:Protein-Protein               18  Coul-14:Protein-Protein           
+ 19  LJ-14:Protein-Protein               20  Coul-SR:Protein-SUB               
+ 21  LJ-SR:Protein-SUB                   22  Coul-14:Protein-SUB               
+ 23  LJ-14:Protein-SUB                   24  Coul-SR:Protein-rest              
+ 25  LJ-SR:Protein-rest                  26  Coul-14:Protein-rest              
+ 27  LJ-14:Protein-rest                  28  Coul-SR:SUB-SUB                   
+ 29  LJ-SR:SUB-SUB                       30  Coul-14:SUB-SUB                   
+ 31  LJ-14:SUB-SUB                       32  Coul-SR:SUB-rest                  
+ 33  LJ-SR:SUB-rest                      34  Coul-14:SUB-rest                  
+ 35  LJ-14:SUB-rest                      36  Coul-SR:rest-rest                 
+ 37  LJ-SR:rest-rest                     38  Coul-14:rest-rest                 
+ 39  LJ-14:rest-rest                   
+
+number 200 is out of range
+number 200 is out of range
+
+-------------------------------------------------------
+Program:     gmx energy, version 2023.3-Ubuntu_2023.3_1ubuntu3
+Source file: src/gromacs/gmxana/gmx_energy.cpp (line 299)
+
+Fatal error:
+No energy terms selected
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
