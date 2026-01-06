@@ -6,6 +6,12 @@
 
 # gmx_ISA
 
+gmx_ISA is an actively developed project and received its first public release (v0.1.0) in January 2026.
+
+Your contribution is highly valuable for the maturation of the tool. If you encounter bugs, have questions, or would like to suggest improvements, please do not hesitate to open an Issue here on GitHub.
+
+---
+
 **gmx_ISA** is an automated Bash-Python framework for **quantum-region preparation and analysis from Molecular Dynamics (MD) trajectories**, with a strong focus on **robust QM-ready structure extraction** and **statistical post-processing** for the GROMACS community.
 
 The software provides **automatic QM region extraction** directly from GROMACS trajectories, including **valence-based capping of broken peptide bonds** that preserves the original **all-atom protonation state**. The generated structures are immediately compatible with **semi-empirical quantum calculations using GFN2-xTB**, enabling fast and reproducible energy evaluations on MD-derived configurations.
