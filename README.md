@@ -98,7 +98,7 @@ The software can be used locally by cloning the GitHub repository. In this case,
 
 ```bash
 # Clone repository and configure PATH
-git clone https://github.com/apmesq/link
+git clone https://github.com/apmesq/gmx_ISA.git
 
 cd gmx_ISA
 
