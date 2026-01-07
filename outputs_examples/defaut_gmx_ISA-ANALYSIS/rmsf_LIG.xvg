@@ -1,0 +1,76 @@
+# This file was created Wed Jan  7 02:50:27 2026
+# Created by:
+#           :-) GROMACS - gmx rmsf, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+# 
+# Executable:   /usr/bin/gmx
+# Data prefix:  /usr
+# Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+# Command line:
+#   gmx rmsf -f ./test.xtc -s ./test.tpr -n ./test.ndx -o rmsf_LIG.xvg
+# gmx rmsf is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "RMS fluctuation"
+@    xaxis  label "Atom"
+@    yaxis  label "(nm)"
+@TYPE xy
+ 1664   0.0524
+ 1665   0.0411
+ 1666   0.0348
+ 1667   0.0765
+ 1668   0.0478
+ 1669   0.0527
+ 1670   0.1276
+ 1671   0.1498
+ 1672   0.1223
+ 1673   0.1425
+ 1674   0.1196
+ 1675   0.0511
+ 1676   0.0727
+ 1677   0.0478
+ 1678   0.1282
+ 1679   0.0544
+ 1680   0.0728
+ 1681   0.0867
+ 1682   0.0969
+ 1683   0.0858
+ 1684   0.0584
+ 1685   0.0419
+ 1686   0.0592
+ 1687   0.0282
+ 1688   0.0605
+ 1689   0.0871
+ 1690   0.0927
+ 1691   0.0895
+ 1692   0.0649
+ 1693   0.1026
+ 1694   0.1009
+ 1695   0.1401
+ 1696   0.0519
+ 1697   0.1246
+ 1698   0.1207
+ 1699   0.0748
+ 1700   0.0753
+ 1701   0.1985
+ 1702   0.2248
+ 1703   0.1545
+ 1704   0.2151
+ 1705   0.1900
+ 1706   0.1864
+ 1707   0.1826
+ 1708   0.1793
+ 1709   0.0620
+ 1710   0.0639
+ 1711   0.1005
+ 1712   0.1100
+ 1713   0.1047
+ 1714   0.1017
+ 1715   0.0795
+ 1716   0.0931
+ 1717   0.1263
+ 1718   0.1290
+ 1719   0.0996
+ 1720   0.1846
+ 1721   0.1803
+ 1722   0.1869

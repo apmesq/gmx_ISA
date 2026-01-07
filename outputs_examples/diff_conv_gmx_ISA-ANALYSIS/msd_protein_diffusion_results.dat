@@ -1,0 +1,13 @@
+Diffusion coefficient analysis from MSD
+
+Full data regression:
+  Slope              = 2.176247e-03
+  Diffusion (D)      = 3.627078e-04 +/- 1.978729e-06
+  R^2                = 0.992644
+
+Best continuous region (>= 50% of points):
+  Index range        = 45 to 170
+  Time range         = 900.000000 to 3400.000000
+  Slope              = 2.536678e-03
+  Diffusion (D)      = 4.227796e-04 +/- 1.425030e-06
+  R^2                = 0.998593

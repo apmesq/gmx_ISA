@@ -1,0 +1,6 @@
+Loading data from: test.csv
+Convergence detected at Frame: 3
+Numerical results saved to CSV files.
+Plot 1 saved: plot_cumulative_avg.png
+Plot 2 saved: plot_convergence_check.png
+Analysis complete.

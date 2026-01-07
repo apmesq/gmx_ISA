@@ -1,0 +1,20 @@
+Autocorrelation Analysis of Interaction Energy
+
+Definitions:
+  E_int(t) = E_Coul(t) + E_LJ(t)
+  C(tau) = <deltaE(t) deltaE(t+tau)> / <deltaE^2>
+  tau_c = integral of C(tau) until first zero crossing
+
+Number of frames        = 251
+Time step (dt)          = 20.000000
+Number of blocks        = 5
+
+Correlation time (tau_c)        = 35.967180
+Statistical error (sigma_tau_c) = 13.066864
+
+Block correlation times:
+  Block 1: 35.588916
+  Block 2: 13.295281
+  Block 3: 37.836768
+  Block 4: 10.000000
+  Block 5: 83.114936

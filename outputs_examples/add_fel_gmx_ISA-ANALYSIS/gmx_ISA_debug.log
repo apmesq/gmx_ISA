@@ -1,0 +1,338 @@
+          :-) GROMACS - gmx gyrate, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx gyrate -s ./test.tpr -f ./test.xtc -n ./test.ndx -o gyrate.xvg
+
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: Reading frame       0 time    0.000   Reading frame       1 time   20.000   Reading frame       2 time   40.000   Reading frame       3 time   60.000   Reading frame       4 time   80.000   Reading frame       5 time  100.000   Reading frame       6 time  120.000   Reading frame       7 time  140.000   Reading frame       8 time  160.000   Reading frame       9 time  180.000   Reading frame      10 time  200.000   Reading frame      11 time  220.000   Reading frame      12 time  240.000   Reading frame      13 time  260.000   Reading frame      14 time  280.000   Reading frame      15 time  300.000   Reading frame      16 time  320.000   Reading frame      17 time  340.000   Reading frame      18 time  360.000   Reading frame      19 time  380.000   Reading frame      20 time  400.000   Reading frame      30 time  600.000   Reading frame      40 time  800.000   Reading frame      50 time 1000.000   Reading frame      60 time 1200.000   Reading frame      70 time 1400.000   Reading frame      80 time 1600.000   Reading frame      90 time 1800.000   Reading frame     100 time 2000.000   Reading frame     110 time 2200.000   Reading frame     120 time 2400.000   Reading frame     130 time 2600.000   Reading frame     140 time 2800.000   Reading frame     150 time 3000.000   Reading frame     160 time 3200.000   Reading frame     170 time 3400.000   Reading frame     180 time 3600.000   Reading frame     190 time 3800.000   Reading frame     200 time 4000.000   
+
+GROMACS reminds you: "My Heart is Just a Muscle In a Cavity" (F. Black)
+
+Selected 4: 'Backbone'
+           :-) GROMACS - gmx sasa, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx sasa -f ./test.xtc -s ./test.tpr -n ./test.ndx -o sasa.xvg -tu ns
+
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+Frank Eisenhaber and Philip Lijnzaad and Patrick Argos and Chris Sander and
+Michael Scharf
+The Double Cube Lattice Method: Efficient Approaches to Numerical Integration
+of Surface Area and Volume and to Dot Surface Contouring of Molecular
+Assemblies
+J. Comp. Chem. 16 (1995) pp. 273-284
+-------- -------- --- Thank You --- -------- --------
+
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx sasa uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
+Analyzed 251 frames, last time 5000.000
+
+GROMACS reminds you: "Occams Razor is the scientific principle that, all things being equal, the simplest explanation is always the dog ate my homework." (Greg Tamblyn)
+
+          :-) GROMACS - gmx trjconv, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx trjconv -s ./test.tpr -f ./test.xtc -n ./test.ndx -o center.xtc -center -pbc mol
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: Reading frame       0 time    0.000   
+Precision of ./test.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+Reading frame       1 time   20.000    ->  frame      0 time    0.000      Reading frame       2 time   40.000    ->  frame      1 time   20.000      Reading frame       3 time   60.000    ->  frame      2 time   40.000      Reading frame       4 time   80.000    ->  frame      3 time   60.000      Reading frame       5 time  100.000    ->  frame      4 time   80.000      Reading frame       6 time  120.000    ->  frame      5 time  100.000      Reading frame       7 time  140.000    ->  frame      6 time  120.000      Reading frame       8 time  160.000    ->  frame      7 time  140.000      Reading frame       9 time  180.000    ->  frame      8 time  160.000      Reading frame      10 time  200.000    ->  frame      9 time  180.000      Reading frame      11 time  220.000    ->  frame     10 time  200.000      Reading frame      12 time  240.000    ->  frame     11 time  220.000      Reading frame      13 time  260.000    ->  frame     12 time  240.000      Reading frame      14 time  280.000    ->  frame     13 time  260.000      Reading frame      15 time  300.000    ->  frame     14 time  280.000      Reading frame      16 time  320.000    ->  frame     15 time  300.000      Reading frame      17 time  340.000    ->  frame     16 time  320.000      Reading frame      18 time  360.000    ->  frame     17 time  340.000      Reading frame      19 time  380.000    ->  frame     18 time  360.000      Reading frame      20 time  400.000    ->  frame     19 time  380.000      Reading frame      30 time  600.000    ->  frame     29 time  580.000      Reading frame      40 time  800.000    ->  frame     39 time  780.000      Reading frame      50 time 1000.000    ->  frame     49 time  980.000      Reading frame      60 time 1200.000    ->  frame     59 time 1180.000      Reading frame      70 time 1400.000    ->  frame     69 time 1380.000      Reading frame      80 time 1600.000    ->  frame     79 time 1580.000      Reading frame      90 time 1800.000    ->  frame     89 time 1780.000      Reading frame     100 time 2000.000    ->  frame     99 time 1980.000      Reading frame     110 time 2200.000    ->  frame    109 time 2180.000      Reading frame     120 time 2400.000    ->  frame    119 time 2380.000      Reading frame     130 time 2600.000    ->  frame    129 time 2580.000      Reading frame     140 time 2800.000    ->  frame    139 time 2780.000      Reading frame     150 time 3000.000    ->  frame    149 time 2980.000      Reading frame     160 time 3200.000    ->  frame    159 time 3180.000      Reading frame     170 time 3400.000    ->  frame    169 time 3380.000      Reading frame     180 time 3600.000    ->  frame    179 time 3580.000      Reading frame     190 time 3800.000    ->  frame    189 time 3780.000      Reading frame     200 time 4000.000    ->  frame    199 time 3980.000      
+
+Last written: frame    250 time 5000.000
+
+
+GROMACS reminds you: "I love deadlines. I like the whooshing sound they make as they fly by." (Douglas Adams)
+
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for centering
+Selected 0: 'System'
+Select group for output
+Selected 0: 'System'
+            :-) GROMACS - gmx rdf, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx rdf -f center.xtc -s ./test.tpr -n ./test.ndx -ref 13 -sel 'name OW' -o rdf_ligand_water.xvg
+
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading frame       0 time    0.000   Reading frame       1 time   20.000   Reading frame       2 time   40.000   Reading frame       3 time   60.000   Reading frame       4 time   80.000   Reading frame       5 time  100.000   Reading frame       6 time  120.000   Reading frame       7 time  140.000   Reading frame       8 time  160.000   Reading frame       9 time  180.000   Reading frame      10 time  200.000   Reading frame      11 time  220.000   Reading frame      12 time  240.000   Reading frame      13 time  260.000   Reading frame      14 time  280.000   Reading frame      15 time  300.000   Reading frame      16 time  320.000   Reading frame      17 time  340.000   Reading frame      18 time  360.000   Reading frame      19 time  380.000   Reading frame      20 time  400.000   Reading frame      30 time  600.000   Reading frame      40 time  800.000   Reading frame      50 time 1000.000   Reading frame      60 time 1200.000   Reading frame      70 time 1400.000   Reading frame      80 time 1600.000   Reading frame      90 time 1800.000   Reading frame     100 time 2000.000   Reading frame     110 time 2200.000   Reading frame     120 time 2400.000   Reading frame     130 time 2600.000   Reading frame     140 time 2800.000   Reading frame     150 time 3000.000   Reading frame     160 time 3200.000   Reading frame     170 time 3400.000   Reading frame     180 time 3600.000   Reading frame     190 time 3800.000   Reading frame     200 time 4000.000   
+Analyzed 251 frames, last time 5000.000
+
+GROMACS reminds you: "I Could Take You Home and Abuse You" (Magnapop)
+
+           :-) GROMACS - gmx covar, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx covar -f ./test.xtc -s ./test.tpr -n ./test.ndx -o prot_eigenval.xvg -v prot_eigenvec.trr -b 0 -e 1000 -tu ns
+
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: 
+Note: the fit and analysis group are identical,
+      while the fit is mass weighted and the analysis is not.
+      Making the fit non mass weighted.
+
+Calculating the average structure ...
+Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
+Constructing covariance matrix (4989x4989) ...
+Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
+Read 251 frames
+
+Trace of the covariance matrix: 23.9021 (nm^2)
+
+Diagonalizing ...
+
+Sum of the eigenvalues: 23.902 (nm^2)
+
+WARNING: there are fewer frames in your trajectory than there are
+degrees of freedom in your system. Only generating the first
+250 out of 4989 eigenvectors and eigenvalues.
+
+Writing eigenvalues to prot_eigenval.xvg
+
+Writing reference, average structure & eigenvectors 1--250 to prot_eigenvec.trr
+Wrote the log to covar.log
+
+GROMACS reminds you: "Science Won't Change You" (The Talking Heads)
+
+
+Choose a group for the least squares fit
+Selected 1: 'Protein'
+
+Choose a group for the covariance analysis
+Selected 1: 'Protein'
+          :-) GROMACS - gmx anaeig, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx anaeig -v prot_eigenvec.trr -f ./test.xtc -eig prot_eigenval.xvg -s ./test.tpr -first 1 -last 2 -2d prot_pca.xvg -n ./test.ndx
+
+trr version: GMX_trn_file (single precision)
+Read non mass weighted reference structure with 1663 atoms from prot_eigenvec.trr
+Read non mass weighted average/minimum structure with 1663 atoms from prot_eigenvec.trr
+Read 250 eigenvectors (for 1663 atoms)
+
+Warning: number of eigenvectors 250 does not match three times
+the number of atoms 1663 in prot_eigenvec.trr. Using 250 eigenvectors.
+
+Read 250 eigenvalues from prot_eigenval.xvg
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
+Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: Group     0 (         System) has 26736 elements
+Group     1 (        Protein) has  1663 elements
+Group     2 (      Protein-H) has   832 elements
+Group     3 (        C-alpha) has   107 elements
+Group     4 (       Backbone) has   321 elements
+Group     5 (      MainChain) has   429 elements
+Group     6 (   MainChain+Cb) has   523 elements
+Group     7 (    MainChain+H) has   531 elements
+Group     8 (      SideChain) has  1132 elements
+Group     9 (    SideChain-H) has   403 elements
+Group    10 (    Prot-Masses) has  1663 elements
+Group    11 (    non-Protein) has 25073 elements
+Group    12 (          Other) has    59 elements
+Group    13 (            SUB) has    59 elements
+Group    14 (          Water) has 25014 elements
+Group    15 (            SOL) has 25014 elements
+Group    16 (      non-Water) has  1722 elements
+Group    17 (    Protein_SUB) has  1722 elements
+Select a group: 2 eigenvectors selected for output: 1 2
+Reading frame       0 time    0.000   Reading frame       1 time   20.000   Reading frame       2 time   40.000   Reading frame       3 time   60.000   Reading frame       4 time   80.000   Reading frame       5 time  100.000   Reading frame       6 time  120.000   Reading frame       7 time  140.000   Reading frame       8 time  160.000   Reading frame       9 time  180.000   Reading frame      10 time  200.000   Reading frame      11 time  220.000   Reading frame      12 time  240.000   Reading frame      13 time  260.000   Reading frame      14 time  280.000   Reading frame      15 time  300.000   Reading frame      16 time  320.000   Reading frame      17 time  340.000   Reading frame      18 time  360.000   Reading frame      19 time  380.000   Reading frame      20 time  400.000   Reading frame      30 time  600.000   Reading frame      40 time  800.000   Reading frame      50 time 1000.000   Reading frame      60 time 1200.000   Reading frame      70 time 1400.000   Reading frame      80 time 1600.000   Reading frame      90 time 1800.000   Reading frame     100 time 2000.000   Reading frame     110 time 2200.000   Reading frame     120 time 2400.000   Reading frame     130 time 2600.000   Reading frame     140 time 2800.000   Reading frame     150 time 3000.000   Reading frame     160 time 3200.000   Reading frame     170 time 3400.000   Reading frame     180 time 3600.000   Reading frame     190 time 3800.000   Reading frame     200 time 4000.000   
+
+
+GROMACS reminds you: "Step On the Brakes" (2 Unlimited)
+
+
+Select the index group that was used for the least squares fit in g_covar
+Selected 1: 'Protein'
+
+Select an index group of 1663 elements that corresponds to the eigenvectors
+Selected 1: 'Protein'
+
+           :-) GROMACS - gmx sham, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx sham -f prot_pca.xvg -ls prot_fel.xpm -notime
+
+  3%  6%  9% 12% 15% 18% 21% 25% 28% 31% 34% 37% 40% 43% 46% 50% 53% 56% 59% 62% 65% 68% 71% 75% 78% 81% 84% 87% 90% 93% 96%100%  3%  6%  9% 12% 15% 18% 21% 25% 28% 31% 34% 37% 40% 43% 46% 50% 53% 56% 59% 62% 65% 68% 71% 75% 78% 81% 84% 87% 90% 93% 96%100%  3%  6%  9% 12% 15% 18% 21% 25% 28% 31% 34% 37% 40% 43% 46% 50% 53% 56% 59% 62% 65% 68% 71% 75% 78% 81% 84% 87% 90% 93% 96%100%  3%  6%  9% 12% 15% 18% 21% 25% 28% 31% 34% 37% 40% 43% 46% 50% 53% 56% 59% 62% 65% 68% 71% 75% 78% 81% 84% 87% 90% 93% 96%100%
+GROMACS reminds you: "Step On the Brakes" (2 Unlimited)
+
+Read 2 sets of 251 points, dt = 1
+
+There are 1024 bins in the 2-dimensional histogram. Beta-Emin = 0
+Ptot = 251
+          :-) GROMACS - gmx xpm2ps, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
+
+Executable:   /usr/bin/gmx
+Data prefix:  /usr
+Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
+Command line:
+  gmx xpm2ps -f prot_fel.xpm -o prot_fel.eps -rainbow red
+
+  3%  6%  9% 12% 15% 18% 21% 25% 28% 31% 34% 37% 40% 43% 46% 50% 53% 56% 59% 62% 65% 68% 71% 75% 78% 81% 84% 87% 90% 93% 96%100%There is 1 matrix in prot_fel.xpm
+Matrix 0 is 32 x 32
+Auto tick spacing failed for X-axis, guessing 2.16382
+Auto tick spacing for X-axis: major 2.16382, minor 0.432764
+Auto tick spacing failed for Y-axis, guessing 2.42629
+Auto tick spacing for Y-axis: major 2.42629, minor 0.485257
+
+GROMACS reminds you: "Step On the Brakes" (2 Unlimited)
+
+Set the x-size of the box to 12.500
+Set the y-size of the box to 12.500
+Selected legend of matrix # 0 for display

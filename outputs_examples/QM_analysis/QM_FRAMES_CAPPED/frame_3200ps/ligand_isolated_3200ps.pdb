@@ -1,0 +1,121 @@
+TITLE     MDANALYSIS FRAME 0: Created by PDBWriter
+CRYST1   64.650   64.650   64.650  90.00  90.00  90.00 P 1           1
+ATOM      1  C1  SUB X 108      25.960   4.860  52.300  1.00  0.00      seg_    
+ATOM      2  N1  SUB X 108      25.450   5.580  53.360  1.00  0.00      seg_    
+ATOM      3  C2  SUB X 108      26.090   6.140  54.470  1.00  0.00      seg_    
+ATOM      4  C3  SUB X 108      24.610   7.790  57.470  1.00  0.00      seg_    
+ATOM      5  C4  SUB X 108      27.420   6.860  54.360  1.00  0.00      seg_    
+ATOM      6  C5  SUB X 108      27.740   7.350  52.960  1.00  0.00      seg_    
+ATOM      7  C6  SUB X 108      28.940   6.970  52.360  1.00  0.00      seg_    
+ATOM      8  C7  SUB X 108      29.270   7.400  51.070  1.00  0.00      seg_    
+ATOM      9  C8  SUB X 108      28.330   8.110  50.330  1.00  0.00      seg_    
+ATOM     10  C9  SUB X 108      27.090   8.380  50.920  1.00  0.00      seg_    
+ATOM     11  C10 SUB X 108      26.830   8.160  52.270  1.00  0.00      seg_    
+ATOM     12  O1  SUB X 108      25.550   7.360  56.480  1.00  0.00      seg_    
+ATOM     13  O2  SUB X 108      24.020   5.940  55.680  1.00  0.00      seg_    
+ATOM     14  C11 SUB X 108      25.110   6.480  55.540  1.00  0.00      seg_    
+ATOM     15  C12 SUB X 108      25.360   8.790  58.360  1.00  0.00      seg_    
+ATOM     16  C13 SUB X 108      23.680   2.600  51.340  1.00  0.00      seg_    
+ATOM     17  O3  SUB X 108      27.040   4.310  52.390  1.00  0.00      seg_    
+ATOM     18  C14 SUB X 108      22.360   3.380  51.460  1.00  0.00      seg_    
+ATOM     19  S1  SUB X 108      22.480   5.080  52.120  1.00  0.00      seg_    
+ATOM     20  C15 SUB X 108      23.860   5.600  51.010  1.00  0.00      seg_    
+ATOM     21  C16 SUB X 108      25.090   4.690  51.050  1.00  0.00      seg_    
+ATOM     22  N2  SUB X 108      24.720   3.350  50.620  1.00  0.00      seg_    
+ATOM     23  S2  SUB X 108      25.950   2.520  49.780  1.00  0.00      seg_    
+ATOM     24  C17 SUB X 108      24.970   1.720  48.510  1.00  0.00      seg_    
+ATOM     25  C18 SUB X 108      24.410   2.560  47.550  1.00  0.00      seg_    
+ATOM     26  C19 SUB X 108      23.600   2.010  46.560  1.00  0.00      seg_    
+ATOM     27  C20 SUB X 108      23.420   0.620  46.470  1.00  0.00      seg_    
+ATOM     28  C21 SUB X 108      24.000  -0.190  47.460  1.00  0.00      seg_    
+ATOM     29  C22 SUB X 108      24.730   0.340  48.520  1.00  0.00      seg_    
+ATOM     30  O4  SUB X 108      26.470   1.480  50.670  1.00  0.00      seg_    
+ATOM     31  O5  SUB X 108      26.810   3.520  49.130  1.00  0.00      seg_    
+ATOM     32  C23 SUB X 108      22.640   0.110  45.280  1.00  0.00      seg_    
+ATOM     33  H1  SUB X 108      24.450   5.720  53.280  1.00  0.00      seg_    
+ATOM     34  H2  SUB X 108      23.760   8.210  56.930  1.00  0.00      seg_    
+ATOM     35  H3  SUB X 108      24.320   6.890  58.030  1.00  0.00      seg_    
+ATOM     36  H4  SUB X 108      27.560   7.730  55.010  1.00  0.00      seg_    
+ATOM     37  H5  SUB X 108      28.160   6.140  54.720  1.00  0.00      seg_    
+ATOM     38  H6  SUB X 108      29.570   6.290  52.930  1.00  0.00      seg_    
+ATOM     39  H7  SUB X 108      30.190   7.080  50.580  1.00  0.00      seg_    
+ATOM     40  H8  SUB X 108      28.630   8.460  49.350  1.00  0.00      seg_    
+ATOM     41  H9  SUB X 108      26.480   8.970  50.230  1.00  0.00      seg_    
+ATOM     42  H10 SUB X 108      25.860   8.460  52.670  1.00  0.00      seg_    
+ATOM     43  H11 SUB X 108      25.700   8.420  59.330  1.00  0.00      seg_    
+ATOM     44  H12 SUB X 108      24.650   9.610  58.590  1.00  0.00      seg_    
+ATOM     45  H13 SUB X 108      26.140   9.300  57.790  1.00  0.00      seg_    
+ATOM     46  H14 SUB X 108      24.010   2.280  52.340  1.00  0.00      seg_    
+ATOM     47  H15 SUB X 108      23.500   1.680  50.770  1.00  0.00      seg_    
+ATOM     48  H16 SUB X 108      21.850   3.400  50.490  1.00  0.00      seg_    
+ATOM     49  H17 SUB X 108      21.680   2.860  52.150  1.00  0.00      seg_    
+ATOM     50  H18 SUB X 108      23.500   5.570  49.970  1.00  0.00      seg_    
+ATOM     51  H19 SUB X 108      23.980   6.660  51.270  1.00  0.00      seg_    
+ATOM     52  H20 SUB X 108      25.620   5.130  50.190  1.00  0.00      seg_    
+ATOM     53  H21 SUB X 108      24.700   3.610  47.640  1.00  0.00      seg_    
+ATOM     54  H22 SUB X 108      23.110   2.680  45.860  1.00  0.00      seg_    
+ATOM     55  H23 SUB X 108      23.940  -1.270  47.360  1.00  0.00      seg_    
+ATOM     56  H24 SUB X 108      24.990  -0.280  49.380  1.00  0.00      seg_    
+ATOM     57  H25 SUB X 108      22.880   0.690  44.370  1.00  0.00      seg_    
+ATOM     58  H26 SUB X 108      21.590   0.270  45.520  1.00  0.00      seg_    
+ATOM     59  H27 SUB X 108      22.890  -0.940  45.110  1.00  0.00      seg_    
+CONECT    1    2   17   21
+CONECT    2    1    3   33
+CONECT    3    2    5   14
+CONECT    4   12   15   34   35
+CONECT    5    3    6   36   37
+CONECT    6    5    7   11
+CONECT    7    6    8   38
+CONECT    8    7    9   39
+CONECT    9    8   10   40
+CONECT   10    9   11   41
+CONECT   11    6   10   42
+CONECT   12    4   14
+CONECT   13   14
+CONECT   14    3   12   13
+CONECT   15    4   43   44   45
+CONECT   16   18   22   46   47
+CONECT   17    1
+CONECT   18   16   19   48   49
+CONECT   19   18   20
+CONECT   20   19   21   50   51
+CONECT   21    1   20   22   52
+CONECT   22   16   21   23
+CONECT   23   22   24   30   31
+CONECT   24   23   25   29
+CONECT   25   24   26   53
+CONECT   26   25   27   54
+CONECT   27   26   28   32
+CONECT   28   27   29   55
+CONECT   29   24   28   56
+CONECT   30   23
+CONECT   31   23
+CONECT   32   27   57   58   59
+CONECT   33    2
+CONECT   34    4
+CONECT   35    4
+CONECT   36    5
+CONECT   37    5
+CONECT   38    7
+CONECT   39    8
+CONECT   40    9
+CONECT   41   10
+CONECT   42   11
+CONECT   43   15
+CONECT   44   15
+CONECT   45   15
+CONECT   46   16
+CONECT   47   16
+CONECT   48   18
+CONECT   49   18
+CONECT   50   20
+CONECT   51   20
+CONECT   52   21
+CONECT   53   25
+CONECT   54   26
+CONECT   55   28
+CONECT   56   29
+CONECT   57   32
+CONECT   58   32
+CONECT   59   32
+END
