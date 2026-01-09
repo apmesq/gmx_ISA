@@ -1,0 +1,34 @@
+name: Install Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-install:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: 3.11
+          activate-environment: test_env
+
+      - name: Install gmx_isa from Anaconda Cloud
+        # Instala usando seu canal e o conda-forge
+        run: |
+          conda install -c apmesq -c conda-forge gmx_isa
+          
+      - name: Verify Installation
+        # Roda o help para provar que o comando existe e funciona
+        run: |
+          gmx_ISA -h

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ------------------------------------------------------------------------------
-# gmx_ISA - GROMACS Instant Simulation Analysis
+# gmx_ISA - GROMACS Interaction Stability & Analysis
 # Copyright (c) 2026 Antônio P. L. de Mesquita
 # Licensed under the MIT License 
 #
@@ -29,11 +29,10 @@
 # ------------------------------------------------------------------------------
 
 # ==============================================================================
-# 1. CONFIGURAÇÃO DE AMBIENTE E RESOLUÇÃO DE CAMINHOS
+# 1. ENVIRONMENT CONFIGURATION AND PATH RESOLUTION
 # =============================================================================
 
-# Descobre onde este script (gmx_ISA) está instalado/localizado
-# Este bloco resolve links simbólicos (vital para Conda/Linux)
+# Finds out where gmx_ISA is (resolves symbolic links)
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do 
   DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
@@ -42,17 +41,17 @@ while [ -h "$SOURCE" ]; do
 done
 BIN_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-# Define a Raiz do Projeto (sobe um nível a partir de /bin)
+# project root
 PROJECT_ROOT="$(dirname "$BIN_DIR")"
 
-# Define os caminhos absolutos baseados na estrutura de pastas
+# absolute paths
 LIB_DIR="$PROJECT_ROOT/lib/gmx_ISA"
 PYTHON_DIR="$LIB_DIR/scripts"
 GEN_CONF_SCRIPT="$LIB_DIR/gen_conf.sh"
 TEMPLATE_FILE="$LIB_DIR/templates/variables.conf"
 
-# --- VERIFICAÇÕES DE SEGURANÇA ---
-# Garante que a estrutura de pastas está íntegra antes de rodar
+# --- SECURITY CHECKS ---
+# Ensures the folder structure is intact before running
 if [ ! -d "$PYTHON_DIR" ]; then
     echo "CRITICAL ERROR: Python scripts directory not found at:"
     echo "  $PYTHON_DIR"
@@ -65,7 +64,7 @@ if [ ! -f "$GEN_CONF_SCRIPT" ]; then
 fi
 
 # ==============================================================================
-# 2. FUNÇÕES AUXILIARES E VISUAIS
+# 2. AUXILIARY AND VISUAL FUNCTIONS
 # ==============================================================================
 
 center_echo() {
@@ -79,7 +78,7 @@ center_echo() {
 show_help() {
       cat << "EOF"
 
-                :-) gmx_ISA - GROMACS Instant Simulation Analysis vt. 6.16.11 (-:
+                :-) gmx_ISA - GROMACS Interaction Stability & Analysis v. 0.5.0 (-:
 
 Hey! I can help you learn how to use gmx_ISA. Let’s go!
 
@@ -100,7 +99,7 @@ gmx_ISA [-s [<.tpr>]] [-f [<.xtc>]] [-n [<.ndx>]] [-en [<.edr>]]
 
 DESCRIPTION
 
-gmx_ISA (GROMACS Instant Simulation Analysis) is an automated free tool designed to simplify and
+gmx_ISA (GROMACS Interaction Stability & Analysis) is an automated free tool designed to simplify and
 accelerate the analysis of molecular dynamics trajectories generated with GROMACS. It also 
 features QM/MM workflows, advanced statistical analysis, and publication-quality plotting.
 
@@ -200,7 +199,7 @@ progress_bar_real_time() {
 }
 
 # ==============================================================================
-# 3. VERIFICAÇÃO INICIAL (HELP / SOLO)
+# 3. INITIAL VERIFICATION (HELP / SOLO)
 # ==============================================================================
 
 clear
@@ -218,7 +217,7 @@ for arg in "$@"; do
 done
 
 # ==============================================================================
-# 4. INTERFACE DE BOAS VINDAS
+# 4. WELCOME INTERFACE
 # ==============================================================================
 
 if [ "$solo_mode" = false ]; then
@@ -228,10 +227,10 @@ if [ "$solo_mode" = false ]; then
     center_echo '  __ _ _ __ ___ __  __   |_ _/ ___|  / \   '
     center_echo ' / _` | '\''_ ` _ \\ \/ /    | |\___ \ / _ \  '
     center_echo '| (_| | | | | | |>  <     | | ___) / ___ \ '
-    center_echo '            \__, |_| |_| |_/_/\_\___|___|____/_/   \_\  vt. 6.16.11'
+    center_echo '            \__, |_| |_| |_/_/\_\___|___|____/_/   \_\  v. 0.5.0'
     center_echo '|___/              |____|                '
     center_echo ""
-    center_echo ":-) A FREE TOOL FOR GROMACS - gmx_ISA (Instant Simulation Analysis) (-:"
+    center_echo ":-) A FREE TOOL FOR GROMACS - gmx_ISA (Interaction Stability & Analysis) (-:"
     center_echo "GMX_ISA is written by:"
     center_echo "Antônio P. L. de Mesquita"
     for i in {1..4}; do echo ""; done
@@ -252,7 +251,6 @@ if [ "$solo_mode" = false ]; then
           tail -n +2 engopt.dat | head -n 15
       fi
       
-      # CORREÇÃO: Usa o caminho da biblioteca para o gen_conf
       if [[ -f "$GEN_CONF_SCRIPT" ]]; then
           source "$GEN_CONF_SCRIPT"
           echo "gen_conf interface was successfully finished."
@@ -263,10 +261,10 @@ if [ "$solo_mode" = false ]; then
 fi
 
 # ==============================================================================
-# 5. CARREGAMENTO E PARSING DE VARIÁVEIS
+#5. LOADING AND PARSING VARIABLES
 # ==============================================================================
 
-# 1. Carrega defaults do arquivo
+# 1. LOADS DEFAUTS FROM .CONF
 if [[ ! -f "variables.conf" ]]; then
     if [ "$solo_mode" = false ]; then
         # CORREÇÃO: Tenta copiar do template se não existir localmente
@@ -279,12 +277,11 @@ if [[ ! -f "variables.conf" ]]; then
     fi
 fi
 
-# Carrega se existir (agora ou antes)
 if [[ -f "variables.conf" ]]; then
     source variables.conf
-fi 
+fi
 
-# 2. Inicializa variáveis de controle
+#2. Initialize control variables
 DO_CENTER=false
 DO_RMS_LIG=false
 DO_RMS_LIG2=false
@@ -311,7 +308,7 @@ DO_XTB_RUN=false
 xtb_charge="0"
 CUSTOM_FLAG_USED=false
 
-# Variáveis para argumentos compostos
+# Variables for compound arguments
 fel_sys=""
 fel_b=""
 fel_e=""
@@ -322,7 +319,7 @@ fel3d_temp=""
 fel3d_bins=""
 fel3d_sigma=""
 
-# 3. LOOP DE PARSING SEGURO
+#3. SAFE PARSING LOOP
 while [[ $# -gt 0 ]]; do
     case "$1" in
         # FLAGS DE INPUT
@@ -331,7 +328,7 @@ while [[ $# -gt 0 ]]; do
         -n)  ndx="$2"; shift 2 ;;
         -en) edr="$2"; shift 2 ;;
         
-        # FLAGS DE AÇÃO
+        # ACTION FLAGS
         -center)     DO_CENTER=true;      CUSTOM_FLAG_USED=true; shift ;;
         -rms_lig)    DO_RMS_LIG=true;     CUSTOM_FLAG_USED=true; shift ;;
         -rms_lig2)   DO_RMS_LIG2=true;    CUSTOM_FLAG_USED=true; shift ;;
@@ -346,7 +343,7 @@ while [[ $# -gt 0 ]]; do
         -sasa)       DO_SASA=true;        CUSTOM_FLAG_USED=true; shift ;;
         -rdf)        DO_RDF=true;         CUSTOM_FLAG_USED=true; shift ;;
         
-        # FLAGS COMPLEXAS
+        # COMPLEX FLAGS
         -fel) DO_FEL=true; CUSTOM_FLAG_USED=true; shift ;;
         -sys) fel_sys="$2"; shift 2 ;;
         -b)   fel_b="$2";   shift 2 ;;
@@ -383,7 +380,7 @@ while [[ $# -gt 0 ]]; do
         -diff)
              DO_DIFF=true; CUSTOM_FLAG_USED=true
              diff_file="$2"
-             shift 2  # Desloca 2 (1 da flag + 1 argumento)
+             shift 2
              ;;
              
         -conv_pbsa)
@@ -394,7 +391,7 @@ while [[ $# -gt 0 ]]; do
              ;;
              
         -extract_qm)
-             # Verifica se há argumentos suficientes (3 argumentos obrigatórios)
+             # Check if there are enough arguments (3 arguments required)
              if [[ -z "$2" ]] || [[ -z "$3" ]] || [[ -z "$4" ]]; then
                  echo "Error: -extract_qm requires 3 arguments."
                  echo "Usage: gmx_ISA -extract_qm <Resname> <Cutoff> <Stride>"
@@ -405,22 +402,22 @@ while [[ $# -gt 0 ]]; do
              qm_resname="$2"
              qm_cutoff="$3"
              qm_stride="$4"
-             shift 4   # Desloca 4 posições (1 da flag + 3 argumentos)
+             shift 4
              ;;
              
          -xtb_run)
              DO_XTB_RUN=true
              CUSTOM_FLAG_USED=true
              
-             # Verifica se o próximo argumento é a flag obrigatória
+             # Checks if the next argument is the required flag.
              if [[ "$2" == "--ligand_charge" ]]; then
-                 # Verifica se existe um valor após a flag
+                 # Checks if there is a value after the flag
                  if [[ -z "$3" ]]; then
                      echo "Error: Missing value for --ligand_charge."
                      exit 1
                  fi
                  xtb_charge="$3"
-                 shift 3  # Desloca: -xtb_run, --ligand_charge, valor
+                 shift 3  # Displace: -xtb_run, --ligand_charge, value
              else
                  echo "Error: Usage incorrect. Use: gmx_ISA -xtb_run --ligand_charge <integer>"
                  exit 1
@@ -428,8 +425,8 @@ while [[ $# -gt 0 ]]; do
              ;;
 
         -fel3d)
-        # --- VERIFICAÇÃO DE SEGURANÇA ---
-        # Verifica se algum dos 4 argumentos obrigatórios está vazio
+        # --- SECURITY CHECK ---
+        # Checks if any of the 4 required arguments are empty
         if [[ -z "$2" ]] || [[ -z "$3" ]] || [[ -z "$4" ]] || [[ -z "$5" ]]; then
             echo "--------------------------------------------------------"
             echo "ERROR: Missed arguments for -fel3d!"
@@ -438,7 +435,7 @@ while [[ $# -gt 0 ]]; do
             echo "       Correct usage: -fel3d <PC_file> <temperarture> <bins> <sigma_smooth>"
             echo "       Example:       -fel3d gibbs.xvg 300 50 10"
             echo "--------------------------------------------------------"
-            exit 1  # Para o script aqui para evitar o travamento
+            exit 1
         fi
         # --------------------------------
              DO_FEL3D=true; CUSTOM_FLAG_USED=true
@@ -446,19 +443,18 @@ while [[ $# -gt 0 ]]; do
              fel3d_temp="$3"
              fel3d_bins="$4"
              fel3d_sigma="$5"
-             shift 5   # Desloca 5 posições (1 da flag + 4 argumentos)
+             shift 5
              ;;
 
-        # IGNORAR
         -h|-solo) shift ;; 
         *) echo "Warning: Unknown flag $1"; shift ;;
     esac
 done
 
 # ==============================================================================
-# --- TRAVA DE SEGURANÇA: EXCLUSÃO MÚTUA DE ROTINAS PYTHON ---
+# --- SECURITY LOCK: MUTUAL DELETION OF PYTHON ROUTINES ---
 # ==============================================================================
-# Conta quantas flags de análise externa (Python) foram ativadas
+# Counts how many external analysis flags (Python) have been activated
 py_analysis_count=0
 if [ "$DO_FEL3D" = true ]; then ((py_analysis_count++)); fi
 if [ "$DO_INT" = true ]; then ((py_analysis_count++)); fi
@@ -470,7 +466,7 @@ if [ "$DO_CONV_PBSA" = true ]; then ((py_analysis_count++)); fi
 if [ "$DO_EXTRACT_QM" = true ]; then ((py_analysis_count++)); fi
 if [ "$DO_XTB_RUN" = true ]; then ((py_analysis_count++)); fi
 
-# Se houver mais de uma, aborta a execução de forma limpa
+# If there is more than one, abort the execution cleanly.
 if [ $py_analysis_count -gt 1 ]; then
     echo ""
     echo "================================================================"
@@ -486,7 +482,7 @@ if [ $py_analysis_count -gt 1 ]; then
 fi
 
 # ==============================================================================
-# 6. VALIDAÇÃO FINAL DOS ARQUIVOS
+# 6. FINAL FILE VALIDATION
 # ==============================================================================
 
 if [[ -z "$tpr" ]]; then tpr=$(find . -maxdepth 1 -type f -name "*.tpr" | head -n 1); fi
@@ -510,7 +506,7 @@ if [ "$solo_mode" = false ]; then
 fi
 
 # ==============================================================================
-# 7. EXECUÇÃO DAS ANÁLISES
+# 7. ANALYSES EXCECUTION
 # ==============================================================================
 
 if [[ ! -d "gmx_ISA-ANALYSIS" ]]; then mkdir gmx_ISA-ANALYSIS; fi
@@ -524,22 +520,22 @@ if [ "$CUSTOM_FLAG_USED" = false ]; then
     DO_ETOT=true; DO_ECOUL=true; DO_ELJ=true
 fi
 
-# --- BLOCO DE EXECUÇÃO ---
+# --- EXECUTION BLOCK ---
 
 ################################################################################
-# START OF QM EXECUTIONS
+# START QM EXECUTIONS
 ################################################################################
 
 if [ "$DO_EXTRACT_QM" = true ]; then
     SCRIPT_QM="$PYTHON_DIR/extract_qm_cli.py"
 
-    # 1. Verificações básicas
+    # 1. basic verifications
     if [ ! -f "$SCRIPT_QM" ]; then
         echo "Error: Internal python script missing at $SCRIPT_QM"
         exit 1
     fi
     
-    # Validação de variáveis obrigatórias do GROMACS
+    # gromacs files validation
     if [[ -z "$tpr" ]]; then tpr=$(find . -maxdepth 1 -type f -name "*.tpr" | head -n 1); fi
     if [[ -z "$xtc" ]]; then xtc=$(find . -maxdepth 1 -type f -name "*.xtc" | head -n 1); fi
     
@@ -553,17 +549,15 @@ if [ "$DO_EXTRACT_QM" = true ]; then
     echo "          STARTING QM EXTRACTION & CAPPING"
     echo "=========================================================="
     
-    # 2. Gerar center.xtc (Requisito 3)
-    # Usa a variável $System definida no variables.conf ou input
+    # 2. Generate center.xtc
+    # Uses the $System variable defined in variables.conf or input
     echo "-> Generating centered trajectory (center.xtc)..."
     
-    # Verifica se $System está definido, senão tenta adivinhar ou falha
     if [[ -z "$System" ]]; then
         echo "Warning: Variable 'System' not defined. Using default group 0 for centering."
         System="0"
     fi
 
-    # Executa o trjconv. Não usamos progress_bar para manter o fluxo visível se der erro.
     { echo "$System"; echo "$System"; } | gmx trjconv -s "$tpr" -f "$xtc" -n "$ndx" -o center.xtc -center -pbc mol > /dev/null 2>&1
     
     if [[ ! -f "center.xtc" ]]; then
@@ -572,14 +566,9 @@ if [ "$DO_EXTRACT_QM" = true ]; then
     fi
     echo "✅ center.xtc generated successfully."
     echo ""
-
-    # 3. Executar o Script Python (Requisito 1 e 2)
-    # Executa DIRETAMENTE (sem progress_bar_real_time) para ver o output
-    # Argumentos esperados pelo python: tpr, xtc, lig_resname, cutoff, stride
     
     python3 "$SCRIPT_QM" "$tpr" "center.xtc" "$qm_resname" "$qm_cutoff" "$qm_stride"
     
-    # Código de retorno do python
     RET_VAL=$?
     
     if [ $RET_VAL -ne 0 ]; then
@@ -588,58 +577,53 @@ if [ "$DO_EXTRACT_QM" = true ]; then
         exit 1
     fi
 
-    # 4. Organização de Arquivos (Requisito 4)
     echo ""
     echo "-> Organizing output files..."
     
     DIR_QM="QM_analysis"
     if [ ! -d "$DIR_QM" ]; then mkdir "$DIR_QM"; fi
     
-    # Move a pasta gerada pelo Python (QM_FRAMES_CAPPED) para dentro de QM_analysis
     if [ -d "QM_FRAMES_CAPPED" ]; then
         mv "QM_FRAMES_CAPPED" "$DIR_QM/"
     fi
     
-    # Move o center.xtc para lá também
     mv center.xtc "$DIR_QM/"
     
     echo "✅ All files moved to ./$DIR_QM"
     echo "=========================================================="
     echo "Done."
     
-    # 5. Encerramento Exclusivo (Requisito 1)
+    # Exclusive Closure 
     exit 0
 fi
 
 if [ "$DO_XTB_RUN" = true ]; then
     SCRIPT_XTB="$PYTHON_DIR/xtb_run.py"
 
-    # 1. Verificações de Segurança
     if [ ! -f "$SCRIPT_XTB" ]; then
         echo "Error: Internal python script missing at $SCRIPT_XTB"
         exit 1
     fi
 
-    # Verifica se a pasta QM_analysis existe (requisito lógico)
+    # Checks if the QM_analysis folder exists
     if [ ! -d "QM_analysis" ]; then
         echo "Error: Directory 'QM_analysis' not found."
         echo "       Please run 'gmx_ISA -extract_qm ...' first."
         exit 1
     fi
     
-    # Identifica o arquivo .edr
+    # checks .edr
     if [[ -z "$edr" ]]; then edr=$(find . -maxdepth 1 -type f -name "*.edr" | head -n 1); fi
     if [[ ! -f "$edr" ]]; then
         echo "Error: Energy file (.edr) not found."
         exit 1
     fi
     
-    # Carrega variáveis do arquivo SE elas estiverem vazias na memória
+    # Loads variables from the file IF they are empty in memory.
     if [[ -z "$CoulombSR" || -z "$LJSR" ]]; then
         if [[ -f "variables.conf" ]]; then source variables.conf; fi
     fi
     
-    # Verifica se as variáveis foram carregadas
     if [[ -z "$CoulombSR" || -z "$LJSR" ]]; then
          echo "Error: CoulombSR or LJSR variables not defined in variables.conf"
          exit 1
@@ -650,14 +634,12 @@ if [ "$DO_XTB_RUN" = true ]; then
     echo "            STARTING XTB CALCULATION WRAPPER"
     echo "=========================================================="
 
-    # 2. Gerar coul_lj_sr.xvg (Com sanitização temporária)
-    # CORREÇÃO: O nome do arquivo agora é coul_lj_sr.xvg (com 'l') para bater com o Python
+    # 2. Generate coul_lj_sr.xvg (With temporary sanitization)
     echo "-> Extracting MM energies (Coulomb/LJ) from $edr..."
     
     clean_coul=$(echo "$CoulombSR" | sed 's/[: ]0$//')
     clean_lj=$(echo "$LJSR" | sed 's/[: ]0$//')
     
-    # Output corrigido para coul_lj_sr.xvg
     printf "$clean_coul\n$clean_lj\n0\n" | gmx energy -f "$edr" -o coul_lj_sr.xvg > /dev/null 2>&1
     
     if [[ ! -f "coul_lj_sr.xvg" ]]; then
@@ -667,24 +649,22 @@ if [ "$DO_XTB_RUN" = true ]; then
     fi
     echo "✅ coul_lj_sr.xvg generated successfully."
 
-    # 3. Organização e Execução
-    # Mantemos o 'mv' aqui. É ESSENCIAL mover antes, pois o script roda dentro da pasta.
+    # 3. organization and execution
     echo "-> Moving files to QM_analysis..."
     mv coul_lj_sr.xvg QM_analysis/
     
-    # Entra na pasta para rodar o script localmente
+    # Navigate to the folder to run the script locally.
     cd QM_analysis || exit 1
     
     echo "-> Executing Python script (xtb_run.py)..."
     echo "   Ligand Charge: $xtb_charge"
     echo "   -------------------------------------------------------"
     
-    # Executa o script Python
     python3 "$SCRIPT_XTB" --ligand_charge "$xtb_charge" --base_dir "QM_FRAMES_CAPPED"
     
     RET_VAL=$?
     
-    # Retorna ao diretório original
+    # Returns to the original directory
     cd ..
     
     if [ $RET_VAL -ne 0 ]; then
@@ -699,12 +679,12 @@ if [ "$DO_XTB_RUN" = true ]; then
     echo "   Check results in ./QM_analysis"
     echo "=========================================================="
     
-    # 5. Encerramento Exclusivo
+    # 5. Exclusive Closing
     exit 0
 fi
 
 ################################################################################
-# END OF QM EXECUTIONS
+# END QM EXECUTIONS
 ################################################################################
 
 if [ "$DO_GYR" = true ]; then
@@ -728,7 +708,7 @@ if [ "$DO_RMS_LIG" = true ]; then
 fi
 
 if [ "$DO_RMS_LIG2" = true ]; then
-    echo "Executing RMSD calculations for the ligand (no H)..."
+    echo "Executing RMSD calculations for Ligand 2..."
     progress_bar_real_time "{ echo \"$Ligand2\"; echo \"$Ligand2\"; } | gmx rms -s \"$tpr\" -f \"$xtc\" -n \"$ndx\" -o LIG-LIG-2_rmsd.xvg -tu ns"
 fi
 
@@ -802,34 +782,28 @@ if [ "$DO_ELJ" = true ]; then
 fi
 
 if [ "$DO_INT" = true ]; then
-      # Define o caminho do script Python interno
+
       SCRIPT_INT="$PYTHON_DIR/int.py"
       
-      # Verifica se o usuário passou os argumentos corretamente
       if [ -z "$int_file_coulomb" ] || [ -z "$int_file_lj" ]; then
           echo "Error: -int requires two .xvg files as arguments."
           echo "Usage: gmx_ISA -int <coulomb.xvg> <lj.xvg>"
       
-      # Verifica se os arquivos que o usuário indicou existem mesmo
       elif [ ! -f "$int_file_coulomb" ]; then
           echo "Error: File '$int_file_coulomb' not found."
       elif [ ! -f "$int_file_lj" ]; then
           echo "Error: File '$int_file_lj' not found."
       
-      # Verifica se o script Python interno está no lugar certo
       elif [ ! -f "$SCRIPT_INT" ]; then
           echo "Error: Internal python script missing at $SCRIPT_INT"
       
       else
           echo "Calculating Interaction Statistics via Python..."
           
-          # Define o nome do arquivo de log
           LOG_PY="interaction_python.log"
           
-          # Chama o Python passando os arquivos escolhidos pelo usuário
           progress_bar_real_time "python3 \"$SCRIPT_INT\" \"$int_file_coulomb\" \"$int_file_lj\" > \"$LOG_PY\""
           
-          # Exibe o resultado na tela (lendo o arquivo que o Python gerou)
           if [[ -f "interaction_energy_statistics.dat" ]]; then
               cat "interaction_energy_statistics.dat"
           else
@@ -1054,7 +1028,7 @@ if [ "$DO_CONV_PBSA" = true ]; then
 fi
 
 # ==============================================================================
-# 8. FINALIZAÇÃO E MOVIMENTAÇÃO DE ARQUIVOS
+# 8. FINALIZATION AND FILE ORGANIZATION
 # ==============================================================================
 
 echo ""

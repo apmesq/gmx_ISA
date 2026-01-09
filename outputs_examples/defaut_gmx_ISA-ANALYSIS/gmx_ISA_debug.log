@@ -1,462 +1,0 @@
-          :-) GROMACS - gmx trjconv, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx trjconv -s ./test.tpr -f ./test.xtc -n ./test.ndx -o center.xtc -center -pbc mol
-
-Will write xtc: Compressed trajectory (portable xdr format): xtc
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   
-Precision of ./test.xtc is 0.001 (nm)
-Using output precision of 0.001 (nm)
-Reading frame       1 time   20.000    ->  frame      0 time    0.000      Reading frame       2 time   40.000    ->  frame      1 time   20.000      Reading frame       3 time   60.000    ->  frame      2 time   40.000      Reading frame       4 time   80.000    ->  frame      3 time   60.000      Reading frame       5 time  100.000    ->  frame      4 time   80.000      Reading frame       6 time  120.000    ->  frame      5 time  100.000      Reading frame       7 time  140.000    ->  frame      6 time  120.000      Reading frame       8 time  160.000    ->  frame      7 time  140.000      Reading frame       9 time  180.000    ->  frame      8 time  160.000      Reading frame      10 time  200.000    ->  frame      9 time  180.000      Reading frame      11 time  220.000    ->  frame     10 time  200.000      Reading frame      12 time  240.000    ->  frame     11 time  220.000      Reading frame      13 time  260.000    ->  frame     12 time  240.000      Reading frame      14 time  280.000    ->  frame     13 time  260.000      Reading frame      15 time  300.000    ->  frame     14 time  280.000      Reading frame      16 time  320.000    ->  frame     15 time  300.000      Reading frame      17 time  340.000    ->  frame     16 time  320.000      Reading frame      18 time  360.000    ->  frame     17 time  340.000      Reading frame      19 time  380.000    ->  frame     18 time  360.000      Reading frame      20 time  400.000    ->  frame     19 time  380.000      Reading frame      30 time  600.000    ->  frame     29 time  580.000      Reading frame      40 time  800.000    ->  frame     39 time  780.000      Reading frame      50 time 1000.000    ->  frame     49 time  980.000      Reading frame      60 time 1200.000    ->  frame     59 time 1180.000      Reading frame      70 time 1400.000    ->  frame     69 time 1380.000      Reading frame      80 time 1600.000    ->  frame     79 time 1580.000      Reading frame      90 time 1800.000    ->  frame     89 time 1780.000      Reading frame     100 time 2000.000    ->  frame     99 time 1980.000      Reading frame     110 time 2200.000    ->  frame    109 time 2180.000      Reading frame     120 time 2400.000    ->  frame    119 time 2380.000      Reading frame     130 time 2600.000    ->  frame    129 time 2580.000      Reading frame     140 time 2800.000    ->  frame    139 time 2780.000      Reading frame     150 time 3000.000    ->  frame    149 time 2980.000      Reading frame     160 time 3200.000    ->  frame    159 time 3180.000      Reading frame     170 time 3400.000    ->  frame    169 time 3380.000      Reading frame     180 time 3600.000    ->  frame    179 time 3580.000      Reading frame     190 time 3800.000    ->  frame    189 time 3780.000      Reading frame     200 time 4000.000    ->  frame    199 time 3980.000      
-
-Last written: frame    250 time 5000.000
-
-
-GROMACS reminds you: "AH ....Satisfaction" (IRIX imapd)
-
-Note that major changes are planned in future for trjconv, to improve usability and utility.
-Select group for centering
-Selected 0: 'System'
-Select group for output
-Selected 0: 'System'
-            :-) GROMACS - gmx rms, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx rms -s ./test.tpr -f ./test.xtc -n ./test.ndx -o LIG-LIG_rmsd.xvg -tu ns
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Select group for least squares fit
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Select group for RMSD calculation
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
-
-GROMACS reminds you: "AH ....Satisfaction" (IRIX imapd)
-
-Selected 13: 'SUB'
-Selected 13: 'SUB'
-            :-) GROMACS - gmx rms, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx rms -s ./test.tpr -f ./test.xtc -n ./test.ndx -o LIG-LIG-2_rmsd.xvg -tu ns
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Select group for least squares fit
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Select group for RMSD calculation
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
-
-GROMACS reminds you: "Rat-tat-tat Ka boom boom" (The Smashing Pumpkins)
-
-Selected 13: 'SUB'
-Selected 13: 'SUB'
-            :-) GROMACS - gmx rms, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx rms -s ./test.tpr -f ./test.xtc -n ./test.ndx -o PROT-PROT_rmsd.xvg -tu ns
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Select group for least squares fit
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Select group for RMSD calculation
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
-
-GROMACS reminds you: "Our struggle today is not to have a female Einstein get appointed as an assistant professor. It is for a woman schlemiel to get as quickly promoted as a male schlemiel." (Bella Abzug)
-
-Selected 4: 'Backbone'
-Selected 4: 'Backbone'
-           :-) GROMACS - gmx rmsf, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx rmsf -f ./test.xtc -s ./test.tpr -n ./test.ndx -o rmsf_PROT.xvg -res
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Select group(s) for root mean square calculation
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   Reading frame       1 time   20.000   Reading frame       2 time   40.000   Reading frame       3 time   60.000   Reading frame       4 time   80.000   Reading frame       5 time  100.000   Reading frame       6 time  120.000   Reading frame       7 time  140.000   Reading frame       8 time  160.000   Reading frame       9 time  180.000   Reading frame      10 time  200.000   Reading frame      11 time  220.000   Reading frame      12 time  240.000   Reading frame      13 time  260.000   Reading frame      14 time  280.000   Reading frame      15 time  300.000   Reading frame      16 time  320.000   Reading frame      17 time  340.000   Reading frame      18 time  360.000   Reading frame      19 time  380.000   Reading frame      20 time  400.000   Reading frame      30 time  600.000   Reading frame      40 time  800.000   Reading frame      50 time 1000.000   Reading frame      60 time 1200.000   Reading frame      70 time 1400.000   Reading frame      80 time 1600.000   Reading frame      90 time 1800.000   Reading frame     100 time 2000.000   Reading frame     110 time 2200.000   Reading frame     120 time 2400.000   Reading frame     130 time 2600.000   Reading frame     140 time 2800.000   Reading frame     150 time 3000.000   Reading frame     160 time 3200.000   Reading frame     170 time 3400.000   Reading frame     180 time 3600.000   Reading frame     190 time 3800.000   Reading frame     200 time 4000.000   
-
-GROMACS reminds you: "Our struggle today is not to have a female Einstein get appointed as an assistant professor. It is for a woman schlemiel to get as quickly promoted as a male schlemiel." (Bella Abzug)
-
-Selected 1: 'Protein'
-           :-) GROMACS - gmx rmsf, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx rmsf -f ./test.xtc -s ./test.tpr -n ./test.ndx -o rmsf_LIG.xvg
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Select group(s) for root mean square calculation
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Reading frame       0 time    0.000   Reading frame       1 time   20.000   Reading frame       2 time   40.000   Reading frame       3 time   60.000   Reading frame       4 time   80.000   Reading frame       5 time  100.000   Reading frame       6 time  120.000   Reading frame       7 time  140.000   Reading frame       8 time  160.000   Reading frame       9 time  180.000   Reading frame      10 time  200.000   Reading frame      11 time  220.000   Reading frame      12 time  240.000   Reading frame      13 time  260.000   Reading frame      14 time  280.000   Reading frame      15 time  300.000   Reading frame      16 time  320.000   Reading frame      17 time  340.000   Reading frame      18 time  360.000   Reading frame      19 time  380.000   Reading frame      20 time  400.000   Reading frame      30 time  600.000   Reading frame      40 time  800.000   Reading frame      50 time 1000.000   Reading frame      60 time 1200.000   Reading frame      70 time 1400.000   Reading frame      80 time 1600.000   Reading frame      90 time 1800.000   Reading frame     100 time 2000.000   Reading frame     110 time 2200.000   Reading frame     120 time 2400.000   Reading frame     130 time 2600.000   Reading frame     140 time 2800.000   Reading frame     150 time 3000.000   Reading frame     160 time 3200.000   Reading frame     170 time 3400.000   Reading frame     180 time 3600.000   Reading frame     190 time 3800.000   Reading frame     200 time 4000.000   
-
-GROMACS reminds you: "The plural of regex is regrets" (Steve McCarthy (on Twitter))
-
-Selected 13: 'SUB'
-           :-) GROMACS - gmx hbond, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx hbond -n ./test.ndx -s ./test.tpr -f center.xtc -num numLigH.xvg -tu ns
-
-Reading file ./test.tpr, VERSION 2023.3-Ubuntu_2023.3_1ubuntu3 (single precision)
-Group     0 (         System) has 26736 elements
-Group     1 (        Protein) has  1663 elements
-Group     2 (      Protein-H) has   832 elements
-Group     3 (        C-alpha) has   107 elements
-Group     4 (       Backbone) has   321 elements
-Group     5 (      MainChain) has   429 elements
-Group     6 (   MainChain+Cb) has   523 elements
-Group     7 (    MainChain+H) has   531 elements
-Group     8 (      SideChain) has  1132 elements
-Group     9 (    SideChain-H) has   403 elements
-Group    10 (    Prot-Masses) has  1663 elements
-Group    11 (    non-Protein) has 25073 elements
-Group    12 (          Other) has    59 elements
-Group    13 (            SUB) has    59 elements
-Group    14 (          Water) has 25014 elements
-Group    15 (            SOL) has 25014 elements
-Group    16 (      non-Water) has  1722 elements
-Group    17 (    Protein_SUB) has  1722 elements
-Select a group: Select a group: Reading frame       0 time    0.000   Specify 2 groups to analyze:
-Selected 1: 'Protein'
-Selected 13: 'SUB'
-Checking for overlap in atoms between Protein and SUB
-Calculating hydrogen bonds between Protein (1663 atoms) and SUB (59 atoms)
-Found 152 donors and 308 acceptors
-
-Will do grid-search on 15x15x15 grid, rcut=0.34999999
-Frame loop parallelized with OpenMP using 16 threads.
-Reading frame       1 time    0.020   Reading frame       2 time    0.040   Reading frame       3 time    0.060   Reading frame       4 time    0.080   Reading frame       5 time    0.100   Reading frame       6 time    0.120   Reading frame       7 time    0.140   Reading frame       8 time    0.160   Reading frame       9 time    0.180   Reading frame      10 time    0.200   Reading frame      11 time    0.220   Reading frame      12 time    0.240   Reading frame      13 time    0.260   Reading frame      14 time    0.280   Reading frame      15 time    0.300   Reading frame      16 time    0.320   Reading frame      17 time    0.340   Reading frame      18 time    0.360   Reading frame      19 time    0.380   Reading frame      20 time    0.400   Reading frame      30 time    0.600   Reading frame      40 time    0.800   Reading frame      50 time    1.000   Reading frame      60 time    1.200   Reading frame      70 time    1.400   Reading frame      80 time    1.600   Reading frame      90 time    1.800   Reading frame     100 time    2.000   Reading frame     110 time    2.200   Reading frame     120 time    2.400   Reading frame     130 time    2.600   Reading frame     140 time    2.800   Reading frame     150 time    3.000   Reading frame     160 time    3.200   Reading frame     170 time    3.400   Reading frame     180 time    3.600   Reading frame     190 time    3.800   Reading frame     200 time    4.000   
-
-GROMACS reminds you: "The best way to obtain plausible negative examples is to run a docking program with a biophysics-based function." (Julie Bernauer)
-
-Average number of hbonds per timeframe 0.183 out of 23408 possible
-          :-) GROMACS - gmx energy, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx energy -f ./test.edr -o total_energy.xvg
-
-Opened ./test.edr as single precision energy file
-
-Select the terms you want from the following list by
-selecting either (part of) the name or the number or a combination.
-End your selection with an empty line or a zero.
--------------------------------------------------------------------
-  1  Angle            2  Proper-Dih.      3  Per.-Imp.-Dih.   4  LJ-14         
-  5  Coulomb-14       6  LJ-(SR)          7  Disper.-corr.    8  Coulomb-(SR)  
-  9  Coul.-recip.    10  Potential       11  Box-X           12  Box-Y         
- 13  Box-Z                               14  Volume                            
- 15  Density                             16  Coul-SR:Protein-Protein           
- 17  LJ-SR:Protein-Protein               18  Coul-14:Protein-Protein           
- 19  LJ-14:Protein-Protein               20  Coul-SR:Protein-SUB               
- 21  LJ-SR:Protein-SUB                   22  Coul-14:Protein-SUB               
- 23  LJ-14:Protein-SUB                   24  Coul-SR:Protein-rest              
- 25  LJ-SR:Protein-rest                  26  Coul-14:Protein-rest              
- 27  LJ-14:Protein-rest                  28  Coul-SR:SUB-SUB                   
- 29  LJ-SR:SUB-SUB                       30  Coul-14:SUB-SUB                   
- 31  LJ-14:SUB-SUB                       32  Coul-SR:SUB-rest                  
- 33  LJ-SR:SUB-rest                      34  Coul-14:SUB-rest                  
- 35  LJ-14:SUB-rest                      36  Coul-SR:rest-rest                 
- 37  LJ-SR:rest-rest                     38  Coul-14:rest-rest                 
- 39  LJ-14:rest-rest                   
-
-Reading energy frame      0 time    0.000         Reading energy frame      1 time   20.000         Reading energy frame      2 time   40.000         Reading energy frame      3 time   60.000         Reading energy frame      4 time   80.000         Reading energy frame      5 time  100.000         Reading energy frame      6 time  120.000         Reading energy frame      7 time  140.000         Reading energy frame      8 time  160.000         Reading energy frame      9 time  180.000         Reading energy frame     10 time  200.000         Reading energy frame     11 time  220.000         Reading energy frame     12 time  240.000         Reading energy frame     13 time  260.000         Reading energy frame     14 time  280.000         Reading energy frame     15 time  300.000         Reading energy frame     16 time  320.000         Reading energy frame     17 time  340.000         Reading energy frame     18 time  360.000         Reading energy frame     19 time  380.000         Reading energy frame     20 time  400.000         Reading energy frame     30 time  600.000         Reading energy frame     40 time  800.000         Reading energy frame     50 time 1000.000         Reading energy frame     60 time 1200.000         Reading energy frame     70 time 1400.000         Reading energy frame     80 time 1600.000         Reading energy frame     90 time 1800.000         Reading energy frame    100 time 2000.000         Reading energy frame    110 time 2200.000         Reading energy frame    120 time 2400.000         Reading energy frame    130 time 2600.000         Reading energy frame    140 time 2800.000         Reading energy frame    150 time 3000.000         Reading energy frame    160 time 3200.000         Reading energy frame    170 time 3400.000         Reading energy frame    180 time 3600.000         Reading energy frame    190 time 3800.000         Reading energy frame    200 time 4000.000         Last energy frame read 250 time 5000.000         
-
-GROMACS reminds you: "The best way to obtain plausible negative examples is to run a docking program with a biophysics-based function." (Julie Bernauer)
-
-
-Statistics over 2500001 steps [ 0.0000 through 5000.0000 ps ], 1 data sets
-All statistics are over 251 points (frames)
-
-Energy                      Average   Err.Est.       RMSD  Tot-Drift
--------------------------------------------------------------------------------
-Coul-SR:Protein-SUB        -15.0021        3.9    22.1663    18.6128  (kJ/mol)
-          :-) GROMACS - gmx energy, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx energy -f ./test.edr -o coulomb_SR.xvg
-
-Opened ./test.edr as single precision energy file
-
-Select the terms you want from the following list by
-selecting either (part of) the name or the number or a combination.
-End your selection with an empty line or a zero.
--------------------------------------------------------------------
-  1  Angle            2  Proper-Dih.      3  Per.-Imp.-Dih.   4  LJ-14         
-  5  Coulomb-14       6  LJ-(SR)          7  Disper.-corr.    8  Coulomb-(SR)  
-  9  Coul.-recip.    10  Potential       11  Box-X           12  Box-Y         
- 13  Box-Z                               14  Volume                            
- 15  Density                             16  Coul-SR:Protein-Protein           
- 17  LJ-SR:Protein-Protein               18  Coul-14:Protein-Protein           
- 19  LJ-14:Protein-Protein               20  Coul-SR:Protein-SUB               
- 21  LJ-SR:Protein-SUB                   22  Coul-14:Protein-SUB               
- 23  LJ-14:Protein-SUB                   24  Coul-SR:Protein-rest              
- 25  LJ-SR:Protein-rest                  26  Coul-14:Protein-rest              
- 27  LJ-14:Protein-rest                  28  Coul-SR:SUB-SUB                   
- 29  LJ-SR:SUB-SUB                       30  Coul-14:SUB-SUB                   
- 31  LJ-14:SUB-SUB                       32  Coul-SR:SUB-rest                  
- 33  LJ-SR:SUB-rest                      34  Coul-14:SUB-rest                  
- 35  LJ-14:SUB-rest                      36  Coul-SR:rest-rest                 
- 37  LJ-SR:rest-rest                     38  Coul-14:rest-rest                 
- 39  LJ-14:rest-rest                   
-
-Reading energy frame      0 time    0.000         Reading energy frame      1 time   20.000         Reading energy frame      2 time   40.000         Reading energy frame      3 time   60.000         Reading energy frame      4 time   80.000         Reading energy frame      5 time  100.000         Reading energy frame      6 time  120.000         Reading energy frame      7 time  140.000         Reading energy frame      8 time  160.000         Reading energy frame      9 time  180.000         Reading energy frame     10 time  200.000         Reading energy frame     11 time  220.000         Reading energy frame     12 time  240.000         Reading energy frame     13 time  260.000         Reading energy frame     14 time  280.000         Reading energy frame     15 time  300.000         Reading energy frame     16 time  320.000         Reading energy frame     17 time  340.000         Reading energy frame     18 time  360.000         Reading energy frame     19 time  380.000         Reading energy frame     20 time  400.000         Reading energy frame     30 time  600.000         Reading energy frame     40 time  800.000         Reading energy frame     50 time 1000.000         Reading energy frame     60 time 1200.000         Reading energy frame     70 time 1400.000         Reading energy frame     80 time 1600.000         Reading energy frame     90 time 1800.000         Reading energy frame    100 time 2000.000         Reading energy frame    110 time 2200.000         Reading energy frame    120 time 2400.000         Reading energy frame    130 time 2600.000         Reading energy frame    140 time 2800.000         Reading energy frame    150 time 3000.000         Reading energy frame    160 time 3200.000         Reading energy frame    170 time 3400.000         Reading energy frame    180 time 3600.000         Reading energy frame    190 time 3800.000         Reading energy frame    200 time 4000.000         Last energy frame read 250 time 5000.000         
-
-GROMACS reminds you: "The best way to obtain plausible negative examples is to run a docking program with a biophysics-based function." (Julie Bernauer)
-
-
-Statistics over 2500001 steps [ 0.0000 through 5000.0000 ps ], 1 data sets
-All statistics are over 251 points (frames)
-
-Energy                      Average   Err.Est.       RMSD  Tot-Drift
--------------------------------------------------------------------------------
-Coul-SR:Protein-SUB        -15.0021        3.9    22.1663    18.6128  (kJ/mol)
-          :-) GROMACS - gmx energy, 2023.3-Ubuntu_2023.3_1ubuntu3 (-:
-
-Executable:   /usr/bin/gmx
-Data prefix:  /usr
-Working dir:  /home/antonio_mesquita/Documentos/gmx_ISA_project/gmx_ISA_dev/test
-Command line:
-  gmx energy -f ./test.edr -o LJ_SR.xvg
-
-Opened ./test.edr as single precision energy file
-
-Select the terms you want from the following list by
-selecting either (part of) the name or the number or a combination.
-End your selection with an empty line or a zero.
--------------------------------------------------------------------
-  1  Angle            2  Proper-Dih.      3  Per.-Imp.-Dih.   4  LJ-14         
-  5  Coulomb-14       6  LJ-(SR)          7  Disper.-corr.    8  Coulomb-(SR)  
-  9  Coul.-recip.    10  Potential       11  Box-X           12  Box-Y         
- 13  Box-Z                               14  Volume                            
- 15  Density                             16  Coul-SR:Protein-Protein           
- 17  LJ-SR:Protein-Protein               18  Coul-14:Protein-Protein           
- 19  LJ-14:Protein-Protein               20  Coul-SR:Protein-SUB               
- 21  LJ-SR:Protein-SUB                   22  Coul-14:Protein-SUB               
- 23  LJ-14:Protein-SUB                   24  Coul-SR:Protein-rest              
- 25  LJ-SR:Protein-rest                  26  Coul-14:Protein-rest              
- 27  LJ-14:Protein-rest                  28  Coul-SR:SUB-SUB                   
- 29  LJ-SR:SUB-SUB                       30  Coul-14:SUB-SUB                   
- 31  LJ-14:SUB-SUB                       32  Coul-SR:SUB-rest                  
- 33  LJ-SR:SUB-rest                      34  Coul-14:SUB-rest                  
- 35  LJ-14:SUB-rest                      36  Coul-SR:rest-rest                 
- 37  LJ-SR:rest-rest                     38  Coul-14:rest-rest                 
- 39  LJ-14:rest-rest                   
-
-Reading energy frame      0 time    0.000         Reading energy frame      1 time   20.000         Reading energy frame      2 time   40.000         Reading energy frame      3 time   60.000         Reading energy frame      4 time   80.000         Reading energy frame      5 time  100.000         Reading energy frame      6 time  120.000         Reading energy frame      7 time  140.000         Reading energy frame      8 time  160.000         Reading energy frame      9 time  180.000         Reading energy frame     10 time  200.000         Reading energy frame     11 time  220.000         Reading energy frame     12 time  240.000         Reading energy frame     13 time  260.000         Reading energy frame     14 time  280.000         Reading energy frame     15 time  300.000         Reading energy frame     16 time  320.000         Reading energy frame     17 time  340.000         Reading energy frame     18 time  360.000         Reading energy frame     19 time  380.000         Reading energy frame     20 time  400.000         Reading energy frame     30 time  600.000         Reading energy frame     40 time  800.000         Reading energy frame     50 time 1000.000         Reading energy frame     60 time 1200.000         Reading energy frame     70 time 1400.000         Reading energy frame     80 time 1600.000         Reading energy frame     90 time 1800.000         Reading energy frame    100 time 2000.000         Reading energy frame    110 time 2200.000         Reading energy frame    120 time 2400.000         Reading energy frame    130 time 2600.000         Reading energy frame    140 time 2800.000         Reading energy frame    150 time 3000.000         Reading energy frame    160 time 3200.000         Reading energy frame    170 time 3400.000         Reading energy frame    180 time 3600.000         Reading energy frame    190 time 3800.000         Reading energy frame    200 time 4000.000         Last energy frame read 250 time 5000.000         
-
-GROMACS reminds you: "Move Over Hogey Bear" (Urban Dance Squad)
-
-
-Statistics over 2500001 steps [ 0.0000 through 5000.0000 ps ], 1 data sets
-All statistics are over 251 points (frames)
-
-Energy                      Average   Err.Est.       RMSD  Tot-Drift
--------------------------------------------------------------------------------
-LJ-SR:Protein-SUB          -79.6403        8.3    23.2919    40.3095  (kJ/mol)
