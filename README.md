@@ -575,17 +575,13 @@ gmx_ISA -solo -xtb_run --ligand_charge +1
 The output is a `.csv` file containing xTB energies for the complex, ligand, residues, QM ligand–residue interaction energy, MM Coulomb energy, MM Lennard-Jones energy, and total MM interaction energy for each analyzed frame. The QM interaction energy for frame $i$ is computed as:
 
 $$
-
 E_i^{int,\,QM} = E_i^{complex, \,QM} - (E_i^{residues,\,QM} + E_i^{ligand,\,QM})
-
 $$
 
 The MM interaction energy for frame $i$ is computed as:
 
 $$
-
 E_i^{int,\,MM} = E_i^{Coulomb-SR} + E_i^{LJ-SR}
-
 $$
 
 Additionally, high-quality PNG images are generated for *frame vs. MM energy*, *frame vs. QM energy*, *frame vs. QM/MM comparison*, and *linear regression of QM versus MM interaction energies*. The final directory will contain:
@@ -696,7 +692,7 @@ $$
 No finite-size corrections are applied. In particular, the **Yeh–Hummer correction** is not included. For quantitative comparison with experimental data, the following correction should be applied:
 
 $$
-D_{\infty} \approx \frac{1}{6}\frac{d}{dt}MSD(t) + \frac{k_B T \, \xi}{6 \pi \eta L}
+D_{\infty} \approx \frac{1}{6}\frac{d}{dt}MSD(t) + \frac{k_B T \xi}{6 \pi \eta L}
 $$
 
 As a result:
