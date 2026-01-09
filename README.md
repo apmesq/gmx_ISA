@@ -8,6 +8,7 @@
 [![Conda Version](https://img.shields.io/conda/vn/apmesq/gmx_isa.svg?color=success&label=Conda%20Version)](https://anaconda.org/apmesq/gmx_isa)
 [![Conda Platform](https://img.shields.io/conda/pn/apmesq/gmx_isa.svg?color=blue&label=Conda%20Platform)](https://anaconda.org/apmesq/gmx_isa)
 [![Conda Downloads](https://img.shields.io/conda/dn/apmesq/gmx_isa.svg?label=Conda%20Downloads)](https://anaconda.org/apmesq/gmx_isa)
+[![DOI](https://zenodo.org/badge/1129001814.svg)](https://doi.org/10.5281/zenodo.18200416)
 
 
 ## Table of Contents
@@ -707,13 +708,13 @@ As a result:
 If you use **gmx_ISA** in your research, please cite the software (DOI below) and the underlying engines used for your calculations:
 
 **1. gmx_ISA Software:**
-> Mesquita, A. P. L. (2026). gmx_ISA: Automated Framework for MD-QM/MM Analysis.
+> de Mesquita, A. P. L. (2026). gmx_ISA First Public Release (v0.5.0). Zenodo. https://doi.org/10.5281/zenodo.18200417
 
 **2. If you used MD Analysis features, please also cite GROMACS:**
-> Abraham, M. J., et al. (2015). GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers. *SoftwareX*, 1-2, 19-25.
+> Abraham, M. J., et al. (2015). GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers. *SoftwareX*, 1-2, 19-25. https://doi.org/10.1016/j.softx.2015.06.001
 
 **3. If you used Quantum Workflows (`-xtb_run`), please also cite xTB:**
-> Bannwarth, C., et al. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method. *J. Chem. Theory Comput.*, 15(3), 1652-1671.
+> Bannwarth, C., et al. (2019). GFN2-xTB—An accurate and broadly parametrized self-consistent tight-binding quantum chemical method. *J. Chem. Theory Comput.*, 15(3), 1652-1671. https://doi.org/10.1021/acs.jctc.8b01176
 
 ---
 
